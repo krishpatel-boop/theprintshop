@@ -1,0 +1,311 @@
+body {
+    margin: 0;
+    font-family: "Just Me Again Down Here", cursive;
+    overflow-x: hidden;
+}
+
+.home-bg {
+    height: 100vh;
+    width: 100%;
+    background-image: url("homepage.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.browse-btn {
+    position: relative;
+    top: 40px;
+    right: 15px;
+    font-size: 80px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.cart-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.menu-icon img,
+.cart-icon img {
+    width: 60px;
+    cursor: pointer;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100%;
+    transition: 0.3s;
+    z-index: 20;
+}
+
+.menu-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+
+.top-links a,
+.bottom-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+
+.top-links {
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.bottom-links {
+    position: absolute;
+    bottom: 60px;
+    left: 35px;
+}
+
+
+.bottom-links .home-link {
+    font-size: 80px;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+.categories-page {
+    padding-top: 120px; 
+    text-align: center;
+}
+
+.categories-title {
+    font-size: 80px;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.categories-grid {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 20px;
+}
+
+.category-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cat-img {
+    width: 260px;
+    height: 360px; 
+    background-color: #eee;
+    object-fit: cover;
+}
+
+.cat-label {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+
+.art-page {
+    background-color: white;
+}
+
+.art-title {
+    font-size: 75px;
+    text-align: center;
+    margin-top: 140px;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+
+.back-arrow img {
+    width: 70px;
+    position: absolute;
+    top: 30px;
+    left: 120px;
+    cursor: pointer;
+}
+
+
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.art-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+
+.info-page {
+    background-color: white;
+    padding-top: 140px;
+}
+
+.info-title {
+    font-size: 90px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.info-text {
+    width: 70%;
+    margin: auto;
+    font-size: 55px;
+    text-align: center;
+    line-height: 1;
+    color: crimson;
+}
+
+
+.preview-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+}
+.preview-img {
+width: 240px;
+    height: 330px; 
+    object-fit: cover;
+    background-color: #eee;
+    margin-bottom: 15px;
+    transform: none
+}
+
+.preview-label {
+font-size: 50px;
+    margin: 0;
+    margin-top: -5px;
+}
+
+.preview-desc{
+    font-size: 30px;
+    margin: 0%;
+    margin-top: -5px;
+}
+
+.size-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.size-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.size-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.size-star {
+    width: 110px;
+    height: 110px;
+    background-image: url("star-outline.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.size-star.selected {
+    background-image: url("star-filled.png");
+    color: white;
+}
+
+
+.product-bg {
+    height: 100vh;
+    width: 100%;
+    background-image: url("productpage.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    position: relative;
+}
+
+.add-to-cart {
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    font-size: 65px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.checkout-label{
+font-size: 45px;
+    margin: 0%;
+    margin-top: -20px;
+}
+
+.checkout-box{
+     display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    text-align:left;
+    padding-top: 300px;
+    padding-left: 200px;
+}
+
+.thankyou-page {
+    margin: 0;
+    padding: 0;
+}
+
+.thankyou-bg {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("thankyou.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
